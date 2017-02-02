@@ -31,7 +31,7 @@
         android:src="@drawable/wflogo2"
         android:layout_width="match_parent"
         android:layout_height="125dp"
-        android:background="#700D152D"
+        android:background="#950D152D"
          android:scaleType="fitStart"
          android:layout_alignParentBottom="true"/>
 
