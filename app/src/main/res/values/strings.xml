@@ -2,5 +2,13 @@
     <string name="app_name">WildFutures</string>
     <string name="title">Wild Futures</string>
     <string name="motto">Protecting primates for 50 years</string>
-    <string name="briefing">Wild Futures is a monkeysanctuary whose main aim to close down - to no longer have to house mistreated monkeys</string>
+    <string name="briefing">Wild Futures is an animal rescue charity based in Cornwall, UK. Its flagship project, The Monkey Sanctuary, offers a home for life to over 40 primates rescued from illegal pet trade. Kiwi, pictured above, was brought to the sanctuary in 2010 along with her mother and brother.</string>
+    <string name="about">About Wild Futures</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="website">www.wildfutures.org</string>
+    <string name="phone">+44 (0)1503 262 532</string>
+    <string name="email">info@wildfutures.org</string>
+    <string name="button1">Adopt A Monkey</string>
+    <string name="button2">Donate</string>
+
 </resources>

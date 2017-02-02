@@ -1,31 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.izzystannett.wildfutures.MainActivity"
+    android:background="#7E1E13">
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.izzystannett.wildfutures.MainActivity">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--top photo and logo overlay-->
+
+ <RelativeLayout
+    android:id="@+id/graphics"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+     <ImageView
+         android:id="@+id/mainphoto"
+         android:src="@drawable/kiwi"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="fitStart"
+         android:adjustViewBounds="true" />
+
+     <ImageView
+        android:src="@drawable/wflogo2"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="#700D152D"
+         android:scaleType="fitStart"
+         android:layout_alignParentBottom="true"/>
+
+ </RelativeLayout>
 
 
-
-        <ImageView
-        android:id="@+id/mainphoto"
-        android:src="@drawable/kiwi"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:scaleType="centerCrop" />
-
-    <!--logo goes here-->
+    <!--blurb goes here-->
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        style="@style/about" />
+
+    <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wild Futures"
-        android:textSize="34sp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textColor="@android:color/white"
-        android:layout_below="@id/mainphoto"/>
+        android:text="@string/briefing"
+        style="@style/sectext" />
 
 
-</RelativeLayout>
+    <!--contact details and icons-->
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/contact_us"
+           style="@style/about" />
+
+
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/website"
+            style="@style/icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/website"
+            style="@style/icon_text"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+      </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/email"
+            style="@style/icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/icon_text"
+            android:text="@string/email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <ImageView
+            android:src="@drawable/phone"
+            style="@style/icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/icon_text"
+            android:text="@string/phone"/>
+    </LinearLayout>
+
+        <Button
+            android:text="@string/button1"
+            style="@style/button"/>
+        <Button
+           android:text="@string/button2"
+           style="@style/button"/>
+
+     </LinearLayout>
+</ScrollView>
