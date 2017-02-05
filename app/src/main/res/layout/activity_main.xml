@@ -5,118 +5,128 @@
     android:id="@+id/activity_main"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    tools:context="com.example.izzystannett.wildfutures.MainActivity"
-    android:background="#7E1E13">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-<!--top photo and logo overlay-->
-
- <RelativeLayout
-    android:id="@+id/graphics"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-     <ImageView
-         android:id="@+id/mainphoto"
-         android:src="@drawable/kiwi"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:scaleType="fitStart"
-         android:adjustViewBounds="true" />
-
-     <ImageView
-        android:src="@drawable/wflogo2"
-        android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:background="#950D152D"
-         android:scaleType="fitStart"
-         android:layout_alignParentBottom="true"/>
-
- </RelativeLayout>
-
-
-    <!--blurb goes here-->
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/about"
-        style="@style/about" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/briefing"
-        style="@style/sectext" />
-
-
-    <!--contact details and icons-->
-
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="@string/contact_us"
-           style="@style/about" />
-
-
-      <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:src="@drawable/website"
-            style="@style/icon"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/website"
-            style="@style/icon_text"
-            android:autoLink="all"
-            android:linksClickable="true"/>
-      </LinearLayout>
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context="com.example.izzystannett.wildfutures.MainActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:src="@drawable/email"
-            style="@style/icon" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/icon_text"
-            android:text="@string/email" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp">
+        android:orientation="vertical">
+        <!--top photo and logo overlay-->
 
-        <ImageView
-            android:src="@drawable/phone"
-            style="@style/icon"/>
+        <RelativeLayout
+            android:id="@+id/graphics"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/mainphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/kiwi" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/logo_bar"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bar_back"
+                android:scaleType="fitStart"
+                android:src="@drawable/wflogo2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+        <!--blurb goes here-->
         <TextView
+            style="@style/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/sectext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/icon_text"
-            android:text="@string/phone"/>
+            android:text="@string/briefing" />
+
+
+        <!--contact details and icons-->
+
+        <TextView
+            style="@style/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/website" />
+
+            <TextView
+                style="@style/icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/website" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/email" />
+
+            <TextView
+                style="@style/icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/icon"
+                android:src="@drawable/phone" />
+
+            <TextView
+                style="@style/icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone" />
+        </LinearLayout>
+</LinearLayout>
+        <Button
+            style="@style/button"
+            android:text="@string/button1" />
+
+        <Button
+            style="@style/button"
+            android:text="@string/button2" />
+
     </LinearLayout>
-
-        <Button
-            android:text="@string/button1"
-            style="@style/button"/>
-        <Button
-           android:text="@string/button2"
-           style="@style/button"/>
-
-     </LinearLayout>
 </ScrollView>

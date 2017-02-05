@@ -6,4 +6,5 @@
     <dimen name="left_indent">72dp</dimen>
     <dimen name="right_indent">32dp</dimen>
     <dimen name="small_side_border">8dp</dimen>
+    <dimen name="logo_bar">125dp</dimen>
 </resources>
